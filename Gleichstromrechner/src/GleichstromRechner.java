@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class GleichstromRechner 
 {
-	while(0){}; //joa
 	//Volt (U)
 	private double spannung;
 	//Stromstärke (I)
