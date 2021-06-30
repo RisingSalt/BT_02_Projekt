@@ -3,7 +3,7 @@ public class GleichstromRechner
 {
 	//Volt (U)
 	private double spannung;
-	//Stromstärke (I)
+	//StromstÃ¤rke (I)
 	private double strom;
 	//Ohm (R)
 	private double widerstand;
@@ -11,7 +11,7 @@ public class GleichstromRechner
 	private double leistung;
 	
 	/*
-	 * Main -> agiert als Menü 
+	 * Main -> agiert als MenÃ¼ 
 	 * In der Main kann der User sich im Programm fortbewegen
 	 */
 	
@@ -27,11 +27,11 @@ public class GleichstromRechner
 			{
 				System.out.printf("\n<----------Menue---------->");
 				System.out.printf("\n<1> Spannung berechnen");
-				System.out.printf("\n<2> Stromstärke berechnen");
+				System.out.printf("\n<2> StromstÃ¤rke berechnen");
 				System.out.printf("\n<3> Widerstand berechnen");
 				System.out.printf("\n<4> Leistung berechnen");
 				System.out.printf("\n<0> Programm beenden");
-				System.out.printf("\nWas möchten Sie erledigen: ");
+				System.out.printf("\nWas mÃ¶chten Sie erledigen: ");
 				menue = sc.nextInt();
 			}while(menue != 0 && menue != 1 && menue != 2 && menue != 3 && menue != 4);
 			
@@ -49,8 +49,8 @@ public class GleichstromRechner
 								System.out.printf("\n<1> Spannung berechnen(R*I)");
 								System.out.printf("\n<2> Spannung berechnen(P/I)");
 								System.out.printf("\n<3> Spannung berechnen(Wurzel(P*R))");
-								System.out.printf("\n<0> Zurück zum Hauptmenue");
-								System.out.printf("\nWas möchten Sie erledigen: ");
+								System.out.printf("\n<0> ZurÃ¼ck zum Hauptmenue");
+								System.out.printf("\nWas mÃ¶chten Sie erledigen: ");
 								u_menue = sc.nextInt();
 							}while(u_menue != 0 && u_menue != 1 && u_menue != 2 && u_menue != 3);
 							
@@ -65,7 +65,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstand in Ohm ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -74,12 +74,12 @@ public class GleichstromRechner
 										
 										do
 										{
-											System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+											System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n| %s | ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n| %s | ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);
@@ -97,7 +97,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -106,12 +106,12 @@ public class GleichstromRechner
 										
 										do
 										{
-											System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+											System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);
@@ -128,7 +128,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -141,7 +141,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstand in Ohm ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -161,12 +161,12 @@ public class GleichstromRechner
 						{
 							do 
 							{
-								System.out.printf("\n<---Stromstärke berechnen--->");
-								System.out.printf("\n<1> Stromstärke berechnen(U/R)");
-								System.out.printf("\n<2> Stromstärke berechnen(Wurzel(P/R))");
-								System.out.printf("\n<3> Stromstärke berechnen(P/U)");
-								System.out.printf("\n<0> Zurück zum Hauptmenue");
-								System.out.printf("\nWas möchten Sie erledigen: ");
+								System.out.printf("\n<---StromstÃ¤rke berechnen--->");
+								System.out.printf("\n<1> StromstÃ¤rke berechnen(U/R)");
+								System.out.printf("\n<2> StromstÃ¤rke berechnen(Wurzel(P/R))");
+								System.out.printf("\n<3> StromstÃ¤rke berechnen(P/U)");
+								System.out.printf("\n<0> ZurÃ¼ck zum Hauptmenue");
+								System.out.printf("\nWas mÃ¶chten Sie erledigen: ");
 								u_menue = sc.nextInt();
 							}while(u_menue != 0 && u_menue != 1 && u_menue != 2 && u_menue != 3);
 							
@@ -181,7 +181,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Spannung in Volt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -194,7 +194,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstand in Ohn ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -212,7 +212,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -225,7 +225,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstnad in Ohn ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -243,7 +243,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -256,7 +256,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Spannung in Volt ein ");
 											}
 											eingabe = sc.nextDouble();
@@ -280,8 +280,8 @@ public class GleichstromRechner
 								System.out.printf("\n<1> Widerstand berechnen(U/I)");
 								System.out.printf("\n<2> Widerstand berechnen(P/(I^2))");
 								System.out.printf("\n<3> Widerstand berechnen((U^2)/P)");
-								System.out.printf("\n<0> Zurück zum Hauptmenue");
-								System.out.printf("\nWas möchten Sie erledigen: ");
+								System.out.printf("\n<0> ZurÃ¼ck zum Hauptmenue");
+								System.out.printf("\nWas mÃ¶chten Sie erledigen: ");
 								u_menue = sc.nextInt();
 							}while(u_menue != 0 && u_menue != 1 && u_menue != 2 && u_menue != 3);
 							
@@ -296,7 +296,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Spannung in Volt ein ");
 											}
 											eingabe = sc.nextDouble();
@@ -309,8 +309,8 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);			
@@ -327,7 +327,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -340,8 +340,8 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);	
@@ -358,8 +358,8 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);	
@@ -371,7 +371,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Leistung in Watt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -395,8 +395,8 @@ public class GleichstromRechner
 								System.out.printf("\n<1> Leistung berechnen(U*I)");
 								System.out.printf("\n<2> Leistung berechnen((I^2)*R)");
 								System.out.printf("\n<3> Leistung berechnen((U^2)/R)");
-								System.out.printf("\n<0> Zurück zum Hauptmenue");
-								System.out.printf("\nWas möchten Sie erledigen: ");
+								System.out.printf("\n<0> ZurÃ¼ck zum Hauptmenue");
+								System.out.printf("\nWas mÃ¶chten Sie erledigen: ");
 								u_menue = sc.nextInt();
 							}while(u_menue != 0 && u_menue != 1 && u_menue != 2 && u_menue != 3);
 							
@@ -411,7 +411,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Spannung in Volt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -420,12 +420,12 @@ public class GleichstromRechner
 										
 										do
 										{
-											System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+											System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);				
@@ -438,12 +438,12 @@ public class GleichstromRechner
 									case 2:		
 										do
 										{
-											System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+											System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
-												System.out.printf("\nGeben Sie bitte die Stromstärke in Ampere ein: ");
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
+												System.out.printf("\nGeben Sie bitte die StromstÃ¤rke in Ampere ein: ");
 											}
 											eingabe = sc.nextDouble();
 										}while(gr.fehlerpruefer(eingabe) == 0);	
@@ -455,7 +455,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstand in Ohm ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -473,7 +473,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte die Spannung in Volt ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -486,7 +486,7 @@ public class GleichstromRechner
 											while(!sc.hasNextDouble())
 											{								
 												String err = sc.next(); 														
-												System.out.printf("\n|%s| ist keine Gültiger Wert!",err);
+												System.out.printf("\n|%s| ist keine GÃ¼ltiger Wert!",err);
 												System.out.printf("\nGeben Sie bitte den Widerstand in Ohm ein: ");
 											}
 											eingabe = sc.nextDouble();
@@ -518,7 +518,7 @@ public class GleichstromRechner
 		
 	/*
 	 * 4 Setter Methoden
-	 * Für alle Einheiten(U/R/I/P)
+	 * FÃ¼r alle Einheiten(U/R/I/P)
 	 */
 	public void set_Spannung(double eingabe)
 	{
@@ -541,13 +541,13 @@ public class GleichstromRechner
 	}
 	
 	/*
-	 * Fehlerüberprüfung
+	 * FehlerÃ¼berprÃ¼fung
 	 */
 	public int fehlerpruefer(double eingabe)
 	{
 		if(eingabe < 0 || eingabe == 0)
 		{
-			System.out.printf("\nGeben Sie bitte ein Gültigen Wert ein!");
+			System.out.printf("\nGeben Sie bitte ein GÃ¼ltigen Wert ein!");
 			return 0;
 		}else
 		{
@@ -556,7 +556,7 @@ public class GleichstromRechner
 	}
 	
 	/*
-	 * Rechnungen für alle Varianten
+	 * Rechnungen fÃ¼r alle Varianten
 	 */
 	public void berechne_Spannung_Variante_01()
 	{
@@ -626,19 +626,19 @@ public class GleichstromRechner
 		switch(auswahl)
 		{
 			case 1:
-				System.out.printf("\nDie Spannung beträgt %.2f Volt\n", spannung);	
+				System.out.printf("\nDie Spannung betrÃ¤gt %.2f Volt\n", spannung);	
 			break;
 				
 			case 2:
-				System.out.printf("\nDie Stromstärke beträgt %.2f Ampere\n", strom);	
+				System.out.printf("\nDie StromstÃ¤rke betrÃ¤gt %.2f Ampere\n", strom);	
 			break;
 		
 			case 3:
-				System.out.printf("\nDer Widerstand beträgt %.2f Ohm\n", widerstand);	
+				System.out.printf("\nDer Widerstand betrÃ¤gt %.2f Ohm\n", widerstand);	
 			break;
 		
 			case 4:
-				System.out.printf("\nDie Leistung beträgt %.2f Watt\n", leistung);
+				System.out.printf("\nDie Leistung betrÃ¤gt %.2f Watt\n", leistung);
 			break;
 		}
 	}
